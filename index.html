@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hayden Priddy - Elite distance runner, professional video editor, and founder of 3 massively scaling businesses. Host of The RunnerBois Podcast.">
+    <meta name="keywords" content="Hayden Priddy, Video Editor, Entrepreneur, Distance Runner, The RunnerBois Podcast, Athlete">
+    <title>Hayden Priddy | Athlete, Editor & Entrepreneur</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #050505; 
+            --text-main: #f0f0f0; 
+            --text-muted: #a9a9a9; 
+            --accent-color: #89CFF0; 
+            --card-bg: #111111;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: 'Open Sans', sans-serif; line-height: 1.6; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+        a { color: var(--accent-color); text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Header */
+        .header { text-align: center; padding: 60px 0; border-bottom: 1px solid #333; }
+        .header h1 { font-size: 5rem; font-weight: 900; letter-spacing: 2px; margin-bottom: 20px; color: var(--text-main); }
+        .social-links { display: flex; justify-content: center; gap: 25px; font-size: 2rem; }
+        .social-links a { color: var(--text-muted); }
+        .social-links a:hover { color: var(--accent-color); transform: scale(1.1); transition: all 0.2s ease-in-out; }
+
+        /* Bio */
+        .about-section { display: flex; flex-wrap: wrap; gap: 40px; padding: 60px 0; border-bottom: 1px solid #333; }
+        .bio-left { flex: 1 1 400px; }
+        .bio-left h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 20px; }
+        .bio-left p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; }
+
+        /* Stats Grid */
+        .stats-right { flex: 1 1 500px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .stat-card { background-color: var(--card-bg); border-radius: 8px; overflow: hidden; text-align: center; border: 1px solid #222; }
+        .stat-image { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+        .stat-text { padding: 15px; font-weight: 700; font-size: 1rem; color: var(--text-main); min-height: 80px; display: flex; align-items: center; justify-content: center; }
+
+        /* YouTube Grid */
+        .youtube-section { padding: 60px 0; border-bottom: 1px solid #333; }
+        .youtube-section h2 { text-align: center; font-size: 2.5rem; color: var(--accent-color); margin-bottom: 40px; }
+        .youtube-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .yt-card { background-color: var(--card-bg); border-radius: 8px; overflow: hidden; transition: transform 0.3s ease; border: 1px solid #222; display: block; }
+        .yt-card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
+        .yt-thumbnail { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+        
+        /* Placeholder for "Coming Soon" */
+        .yt-placeholder { width: 100%; aspect-ratio: 16 / 9; background-color: #222; display: flex; align-items: center; justify-content: center; position: relative; cursor: default; }
+        .yt-placeholder span { z-index: 2; font-weight: bold; font-family: 'Montserrat', sans-serif; letter-spacing: 2px; color: #555;}
+        
+        .yt-info { padding: 15px; text-align: center; }
+        .yt-info h3 { font-size: 1.1rem; margin-bottom: 5px; color: var(--text-main); }
+
+        /* Footer */
+        .footer { text-align: center; padding: 60px 20px; }
+        .footer h2 { font-size: 2rem; color: var(--accent-color); margin-bottom: 15px; }
+        .footer p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 10px; }
+        .footer a { font-size: 1.2rem; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 3rem; }
+            .stats-right { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <!-- SEO & JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hayden Priddy",
+      "url": "https://haydenpriddy.com",
+      "jobTitle": "Video Editor, Entrepreneur, & Distance Runner",
+      "sameAs": [
+        "https://www.youtube.com/@Hayden_Priddy",
+        "https://www.instagram.com/hayden_priddy/",
+        "https://open.spotify.com/show/3cZYAPuwJzY47QGzjNbSVe",
+        "https://www.tiktok.com/@hayden_priddy",
+        "https://www.facebook.com/profile.php?id=61581547041473",
+        "https://x.com/hayden_priddy_",
+        "https://www.linkedin.com/in/hayden-priddy/"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1>HAYDEN PRIDDY</h1>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@Hayden_Priddy" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/hayden_priddy/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/3cZYAPuwJzY47QGzjNbSVe?si=83fff46d62294e57" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.tiktok.com/@hayden_priddy" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61581547041473" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/hayden_priddy_" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/hayden-priddy/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </header>
+
+        <!-- BIO & STATS GRID -->
+        <section class="about-section">
+            <div class="bio-left">
+                <h2>Background</h2>
+                <p>I am an elite distance runner, freelance video editor, and serial entrepreneur based in Chattanooga, Tennessee.</p>
+                <p>Whether I'm running 80-mile weeks to achieve professional athletic status, producing high-impact content for digital platforms, or scaling e-commerce ventures like Chattown Traders and Void Automation, I bring relentless drive to everything I do.</p>
+                <p>I also host The RunnerBois Podcast, sitting down with top names in the running world to share insights, stories, and strategies for success.</p>
+            </div>
+            
+            <div class="stats-right">
+                <div class="stat-card">
+                    <img src="hayden-priddy-10m-views.jpg" alt="10M Views" class="stat-image">
+                    <div class="stat-text">10M+ views cross platform</div>
+                </div>
+                <div class="stat-card">
+                    <a href="https://www.youtube.com/@Hayden_Priddy" target="_blank">
+                        <img src="the-runnerbois-podcast-host.jpg" alt="The RunnerBois Podcast" class="stat-image">
+                        <div class="stat-text">Host of The RunnerBois podcast</div>
+                    </a>
+                </div>
+                <div class="stat-card">
+                    <img src="professional-video-editor.jpg" alt="Professional Video Editor" class="stat-image">
+                    <div class="stat-text">Professional video editor</div>
+                </div>
+                <div class="stat-card">
+                    <img src="hayden-priddy-ceo-founder.jpg" alt="Founder and CEO" class="stat-image">
+                    <div class="stat-text">Founder / CEO of 3 massively scaling businesses</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YOUTUBE ACHIEVEMENTS -->
+        <section class="youtube-section">
+            <h2>Achievements & Viral Moments</h2>
+            <div class="youtube-grid">
+                
+                <!-- Video 1 -->
+                <a href="https://www.youtube.com/watch?v=EWq_v1xtLKE" target="_blank" class="yt-card">
+                    <img src="hayden-priddy-355-downhill-mile.jpg" alt="3:55 Downhill Mile Thumbnail" class="yt-thumbnail">
+                    <div class="yt-info">
+                        <h3>3:55 Downhill Mile</h3>
+                    </div>
+                </a>
+
+                <!-- Video 2 -->
+                <a href="https://www.youtube.com/watch?v=doZfX2C7vsA&t=154s" target="_blank" class="yt-card">
+                    <img src="taco-bell-mile-finisher.jpg" alt="World's First Taco Bell Mile Finisher Thumbnail" class="yt-thumbnail">
+                    <div class="yt-info">
+                        <h3>World's First Taco Bell Mile Finisher</h3>
+                    </div>
+                </a>
+
+                <!-- Video 3 -->
+                <a href="https://www.youtube.com/watch?v=7WFbUtgk7AQ&t=1s" target="_blank" class="yt-card">
+                    <img src="sub-5-minute-mile-crocs.jpg" alt="Sub 5 Minute Mile In Crocs Thumbnail" class="yt-thumbnail">
+                    <div class="yt-info">
+                        <h3>Sub 5 Minute Mile In Crocs</h3>
+                    </div>
+                </a>
+
+                <!-- Video 4 (Coming Soon) -->
+                <div class="yt-card">
+                    <div class="yt-placeholder">
+                        <span>COMING SOON</span>
+                    </div>
+                    <div class="yt-info">
+                        <h3>Guinness World Record??</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER / CONTACT -->
+        <footer class="footer">
+            <h2>Contact Us</h2>
+            <p>For sponsorships, guest inquiries, and business requests:</p>
+            <a href="mailto:haydenpriddy@runnerboispodcast.com">haydenpriddy@runnerboispodcast.com</a>
+        </footer>
+    </div>
+
+</body>
+</html>
